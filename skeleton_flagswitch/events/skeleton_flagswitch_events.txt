@@ -1,7 +1,7 @@
 ### The events for the flagswitch
 ### skeleton by MEEEB
-### v1
-### changelog goes here
+### v1 rev1
+### a darn typo and a missing comment
 
 
 ### General notes (for the guy using the code):
@@ -41,7 +41,7 @@ country_event = {
 	clr_country_flag = XXX_war_flag_occured
 	}
 
-	mean_time_to_happen = { days = 0 } # this actually woks; if you remove it, the event breaks
+	mean_time_to_happen = { days = 0 } # this actually works; if you remove it, the event breaks
 
 	option = { # Switch to civil flag
 	name = XXXflag.1.a
@@ -112,7 +112,7 @@ country_event = {
 	}
 
 	immediate = {
-	clr_country_flag = XXX_war_flag_occured # the actual reset; this way, .1 will not occur, but 
+	clr_country_flag = XXX_war_flag_occured # the actual reset; this way, .1 will not occur, but .2 can occur during the next war
 	}
 
 	mean_time_to_happen = { days = 0 }
