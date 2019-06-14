@@ -1,6 +1,7 @@
 ### Readme for the skeleton flagswitch
 ### by MEEEB
-### v1
+### v1 rev1
+### new files and changed file list
 
 
 Hello potential user,
@@ -18,7 +19,9 @@ That's it.
 In it's original form, this (skeleton) mod consists of:
 
 /events/skeleton_flagswitch_events.txt
-/gfx/flags/{medium,small} (both empty directories for your convenience)
+/gfx/flags/medium/delete_me.txt
+/gfx/flags/small/delete_me.txt
+/gfx/flags/delete_me.txt
 /localisation/skeleton_flagswitch_events_l_english.yml
 /notes_by_MEEEB.txt (this file)
 
