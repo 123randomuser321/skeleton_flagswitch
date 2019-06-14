@@ -70,6 +70,7 @@ country_event = {
 	trigger = {
 	tag = XXX
 	has_war = yes
+	NOT = { has_country_flag = XXX_war_flag_occured } # this way, the event disables itself
 	}
 
 	immediate = {
