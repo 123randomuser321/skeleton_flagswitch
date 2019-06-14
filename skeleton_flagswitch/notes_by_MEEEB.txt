@@ -1,0 +1,45 @@
+### Readme for the skeleton flagswitch
+### by MEEEB
+### v1
+
+
+Hello potential user,
+
+In this document, I will give a quick rundown on how to use this.
+
+
+But first, the usage policy:
+
+You can use and modify this code to your liking, though you shall always credit me as the original author (which should be taken care of, as I credited myself at the start of all files).
+
+That's it.
+
+
+In it's original form, this (skeleton) mod consists of:
+
+/events/skeleton_flagswitch_events.txt
+/gfx/flags/{medium,small} (both empty directories for your convenience)
+/localisation/skeleton_flagswitch_events_l_english.yml
+/notes_by_MEEEB.txt (this file)
+
+and:
+
+../skeleton_flagswitch.mod
+
+
+How to use this mod as a base:
+
+1. Rename skeleton_flagswitch_events.txt and skeleton_flagswitch_events_l_english.yml to something fitting your intent (e.g. GER_flagswitch...).
+2. Follow the instructions in the respective files.
+3. Put your gfx (the flags) in their respective folders (check the wiki for instructions, if necessary).
+4. Create a readme (optional) and keep this file just to be safe (also optional).
+5. Rename the mod folder (skeleton_flagswitch)
+6. Rename skeleton_flagswitch.mod and follow the intructions inside of it.
+7. You're done and can now upload a functional mod (check the wiki if you don't know how that works).
+
+
+
+I hope you put this to good use,
+
+
+ - MEEEB

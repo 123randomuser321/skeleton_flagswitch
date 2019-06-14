@@ -1,0 +1,125 @@
+### The events for the flagswitch
+### skeleton by MEEEB
+### v1
+### changelog goes here
+
+
+### General notes (for the guy using the code):
+###
+### No instance of custom_effect_tooltip is necessary; if you remove it, the game simply won't show a tooltip (see hidden_effect)
+###
+### If you want it easy, simply replace all 'XXX' with the tag that shall use this, e.g. 'GER' or 'ENG'.
+###
+### Bear in mind, that this is barebones.
+### For example: Simply replacing 'XXX' with a tag will completely ignore cosmetic tags (for Vanilla, think Imperial Federation).
+###
+### For further notes, see actual code.
+
+
+### Create a namespace for this
+
+add_namespace = XXXflag
+
+### done
+
+
+### Event for the civil flag
+
+country_event = {
+	id = XXXflag.1
+	title = XXXflag.1.t
+	desc = XXXflag.1.d
+
+	trigger = {
+	tag = XXX
+	has_country_flag = XXX_war_flag # set by .2
+	NOT = { has_war = yes }
+	}
+
+	immediate = { # immediate is used, so no 'conflicting' events occur
+	clr_country_flag = XXX_war_flag
+	clr_country_flag = XXX_war_flag_occured
+	}
+
+	mean_time_to_happen = { days = 0 } # this actually woks; if you remove it, the event breaks
+
+	option = { # Switch to civil flag
+	name = XXXflag.1.a
+	hidden_effect = {
+	set_cosmetic_tag = XXX # XXX is in this case not a dynamic, but a static tag. Those can still be invoked by this.
+	}
+	custom_effect_tooltip = XXXflag.1.ta # use this to notify the user of the flagswitch
+	}
+
+	option = { # No Switch
+	name = XXXflag.1.b
+	custom_effect_tooltip = XXXflag.1.tb # tell the user that he is not switching flags
+	}
+}
+
+### end event for the civil flag
+
+
+### Event for the war flag
+
+country_event = {
+	id = XXXflag.2
+	title = XXXflag.2.t
+	desc = XXXflag.2.d
+
+	trigger = {
+	tag = XXX
+	has_war = yes
+	}
+
+	immediate = {
+	set_country_flag = XXX_war_flag_occured
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = { # Switch to war flag
+	name = XXXflag.2.a
+	hidden_effect = {
+	set_country_flag = XXX_war_flag
+	set_cosmetic_tag = XXX_at_war # the invoked cosmetic tag is the name of the flags you put into 'gfx/flags', minus the ideology
+	}
+	custom_effect_tooltip = XXXflag.2.ta # notify user about the switch to the war flag
+	}
+
+	option = { # No switch
+	name = XXXflag.2.b
+	custom_effect_tooltip = XXXflag.2.tb # tell the user he will keep the civil flag
+	}
+}
+
+### end event for the war flag
+
+### Event to reset everything during peacetime if XXXflag.2.b was chosen
+
+country_event = {
+	id = XXXflag.3
+	title = XXXflag.3.t
+	desc = XXXflag.3.d
+
+	trigger = {
+	tag = XXX
+	NOT = {
+	has_country_flag = XXX_war_flag # only set by .2.a
+	has_war = yes
+	}
+	has_country_flag = XXX_war_flag_occured # set by .2's 'immediate'
+	}
+
+	immediate = {
+	clr_country_flag = XXX_war_flag_occured # the actual reset; this way, .1 will not occur, but 
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+	name = XXXflag.3.a # just fluff
+	}
+}
+
+### end of reset

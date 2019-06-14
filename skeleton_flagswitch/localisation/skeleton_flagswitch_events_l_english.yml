@@ -1,0 +1,36 @@
+﻿### loc for the events
+### skeleton by MEEEB
+### v1
+### changelog goes here
+
+
+l_english: ### Can be whatever language you want, just check what vanilla uses (e.g. l_german)
+
+
+### General notes (for the guy using the code):
+###
+### These things (name prior to ':0') must be named the same way as they are in the file for the events.
+###
+### Just replace the text inbetween the quotation marks with whatever fits.
+
+
+### XXXflag.1
+XXXflag.1.t:0 "Title of XXXflag.1"
+XXXflag.1.d:0 "Description of XXXflag.1"
+XXXflag.1.a:0 "Text of the first option of XXXflag.1"
+XXXflag.1.ta:0 "Tooltip of the first option of XXXflag.1"
+XXXflag.1.b:0 "Text of the second option of XXXflag.1"
+XXXflag.1.tb:0 "Tooltip of the second option of XXXflag.1"
+
+### XXXflag.2
+XXXflag.2.t:0 "Title of XXXflag.2"
+XXXflag.2.d:0 "Description of XXXflag.2"
+XXXflag.2.a:0 "Text of the first option of XXXflag.2"
+XXXflag.2.ta:0 "Tooltip of the first option of XXXflag.2"
+XXXflag.2.b:0 "Text of the second option of XXXflag.2"
+XXXflag.2.tb:0 "Tooltip of the second option of XXXflag.2"
+
+### XXXflag.3
+XXXflag.3.t:0 "Title of XXXflag.3"
+XXXflag.3.d:0 "Description of XXXflag.3"
+XXXflag.3.a:0 "Text of the only option of XXXflag.3"
